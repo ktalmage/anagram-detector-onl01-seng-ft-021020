@@ -15,10 +15,9 @@ class Anagram
     words_array.select do |item|
       new_arr = []
       !(@word.split(" ").sort == item.split(" ").sort)
-      new_arr 
+      return new_arr 
       end
-      
-  end 
+    end 
 end
 
 listen = Anagram.new("listen")
