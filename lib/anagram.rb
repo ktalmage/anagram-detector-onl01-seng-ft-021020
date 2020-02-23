@@ -23,6 +23,7 @@ class Anagram
       (@word.split("").sort) == (element.split("").sort)
     end
   end
+end
   
 listen = Anagram.new("listen")
 listen.match(%w(enlists google inlets banana))
