@@ -11,26 +11,21 @@ class Anagram
     
   end
     
-  
-
-listen = Anagram.new("listen")
-listen.match(%w(enlists google inlets banana))
-
-
-
-#return_array = []
-    #array_of_words.each do |element|
-      #(@word.split("").sort) == (element.split("").sort)
-        #return_array << element
-      #end
-    #end
-    #return_array
+  return_array = []
+    array_of_words.each do |element|
+      (@word.split("").sort) == (element.split("").sort)
+        return_array << element
+      end
+    end
+    return_array
     
     array_of_words.select do |element|
       (@word.split("").sort) == (element.split("").sort)
     end
   end
   
+listen = Anagram.new("listen")
+listen.match(%w(enlists google inlets banana))
 
 
 
