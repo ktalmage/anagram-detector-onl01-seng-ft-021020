@@ -18,7 +18,7 @@ class Anagram
       return new_arr << item
     !((@word.split(" ").sort == item.split(" ").sort))
       return new_arr
-    end
+    
       end
     end 
 end
