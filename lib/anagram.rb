@@ -14,7 +14,6 @@ class Anagram
   def match(words_array)
     words_array.select do |item|
       @word.split(" ").sort == item.split(" ").sort
-      binding.pry
       end
       words_array
   end 
