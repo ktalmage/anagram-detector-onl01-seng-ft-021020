@@ -11,21 +11,26 @@ class Anagram
     
   end
     
-  def match(words_array)
-    words_array.select do |item|
-      new_arr = []
-     (@word.split(" ").sort == item.split(" ").sort)
-      return new_arr << item
-        end
-    end 
-end
+  
 
 listen = Anagram.new("listen")
 listen.match(%w(enlists google inlets banana))
 
 
 
-
+#return_array = []
+    #array_of_words.each do |element|
+      #(@word.split("").sort) == (element.split("").sort)
+        #return_array << element
+      #end
+    #end
+    #return_array
+    
+    array_of_words.select do |element|
+      (@word.split("").sort) == (element.split("").sort)
+    end
+  end
+  
 
 
 
