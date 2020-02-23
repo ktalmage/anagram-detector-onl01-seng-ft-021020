@@ -32,11 +32,11 @@ listen = Anagram.new("listen")
 listen.match(%w(enlists google inlets banana))
 
 
-#if (word.split("").sort) == (test[2].split("").sort)
-#  puts "test is true"
-#else
-#  puts "test is false"
-#end
+if (word.split("").sort) == (test[2].split("").sort)
+  puts "test is true"
+else
+  puts "test is false"
+end
 
 
 
