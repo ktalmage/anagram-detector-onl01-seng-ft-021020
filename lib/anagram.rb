@@ -16,7 +16,9 @@ class Anagram
       new_arr = []
      if (@word.split(" ").sort == item.split(" ").sort)
       return new_arr << item
-    else 
+    else !((@word.split(" ").sort == item.split(" ").sort))
+      return new_arr
+    end
       end
     end 
 end
