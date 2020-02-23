@@ -15,9 +15,9 @@ class Anagram
     words_array.select do |item|
       new_arr = []
       !(@word.split(" ").sort == item.split(" ").sort)
-      new arr << item
+      new_arr << item
       end
-      words_array
+      item
   end 
 end
 
