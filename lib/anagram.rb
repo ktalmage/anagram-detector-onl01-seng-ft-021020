@@ -37,7 +37,7 @@ if (word.split("").sort) == (test[2].split("").sort)
 else
   puts "test is false"
 end
-
+end
 
 
 
